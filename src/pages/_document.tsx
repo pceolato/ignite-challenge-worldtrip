@@ -21,7 +21,7 @@ export default class MyDocument extends Document {
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:image:width" content="1200" />
           <meta name="twitter:image:height" content="620" />
-
+          
         </Head>
         <body>
           <Main />

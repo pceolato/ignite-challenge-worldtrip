@@ -1,4 +1,5 @@
-import { Flex, Heading, Text } from "@chakra-ui/react";
+import { Flex, Heading, Icon, Popover, PopoverArrow, PopoverBody, PopoverCloseButton, PopoverContent, PopoverTrigger, Text } from "@chakra-ui/react";
+import { RiInformationLine } from "react-icons/ri";
 
 export function Infos() {
     return (
@@ -18,7 +19,30 @@ export function Infos() {
 
             <Flex direction="column" justify="center" align={["flex-start", "flex-start", "center"]}>
                 <Heading fontSize={["2xl", "5xl"]} color="yellow.400" fontWeight="500">27</Heading>
-                <Text fontWeight="600" fontSize={["md", "xl"]} color="gray.700">cidades +100</Text>
+                <Text fontWeight="600" fontSize={["md", "xl"]} color="gray.700"
+                    >cidades +100
+                    {/* <Popover>
+                        <PopoverTrigger>
+                            <span>
+                                <Icon 
+                                    as={RiInformationLine} 
+                                    cursor="pointer" 
+                                    ml="1" 
+                                    color="gray.400" 
+                                    w={["10px", "16px"]} 
+                                    h={["10px", "16px"]}
+                                />
+                            </span>
+                        </PopoverTrigger>
+                        <PopoverContent bg="gray.400" color="gray.700">
+                            <PopoverArrow bg="gray.400"/>
+                            <PopoverCloseButton />
+                            <PopoverBody fontWeight="400" fontSize="lg">
+                                Paris, Madrid, Roma, Lisboa, Barcelona
+                            </PopoverBody>
+                        </PopoverContent>
+                    </Popover> */}
+                </Text>
             </Flex>
         </Flex>
     )
